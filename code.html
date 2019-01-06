@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script src="script.js" type="text/javascript"></script>
+	<meta charset="UTF-8">
+	<title>hope</title>
+	<link rel="stylesheet" href="D:\111\GothBoiClique\glhf.css">
+	 <link rel="icon" href="D:\111\GothBoiClique/advisory.png" type="images/png">
+</head>
+<body>
+	<form>
+		<p><input type="text" name="login" placeholder="login" size="20"></p>
+		<p><input type="password" name="password" placeholder="password" size="20"></p>
+		<p>
+			<button type="submit" formmethod="get" formaction="index.html">Отправить
+			</button>
+			<button type="reset">Отмена</button>
+			<label for="age">Возраст:</label>
+			<input type="number" step="1" min="1"  max="100" value="5" name="age"/ >
+			<button type="submit" formmethod="get" formaction="index.html">submit
+			</button>
+		</p>
+	</form>
+	<h1>
+	<a href="https://metanit.com/web/html5/10.1.php" target="_blank">kaVo</a>
+	<details>
+		<summary>KYBALION</summary>
+		<ul>
+			<li>kybalion</li>
+			<li>kybalion</li>
+			<li>kybalion</li>
+			<li>Wake Up</li>
+		</ul>
+	</details>
+	</h1>
+	<canvas id="myCanvas" width="300" height="300"
+                		style="background-color:#42427c; border: 6px solid #932908; ">
+        </canvas>
+<script type="text/javascript">
+            var canvas = document.getElementById("myCanvas"), 
+                context = canvas.getContext("2d"),
+                w = canvas.width,
+                h=canvas.height;
+                 
+            var mouse = { x:0, y:0};
+            var draw = false;
+             
+            canvas.addEventListener("mousedown", function(e){
+                 
+                mouse.x = e.pageX - this.offsetLeft;
+                mouse.y = e.pageY - this.offsetTop;
+                draw = true;
+                context.beginPath();
+                context.moveTo(mouse.x, mouse.y);
+            });
+            canvas.addEventListener("mousemove", function(e){
+                 
+                if(draw==true){
+                 
+                    mouse.x = e.pageX - this.offsetLeft;
+                    mouse.y = e.pageY - this.offsetTop;
+                    context.lineTo(mouse.x, mouse.y);
+                    context.stroke();
+                }
+            });
+            canvas.addEventListener("mouseup", function(e){
+                 
+                mouse.x = e.pageX - this.offsetLeft;
+                mouse.y = e.pageY - this.offsetTop;
+                context.lineTo(mouse.x, mouse.y);
+                context.stroke();
+                context.closePath();
+                draw = false;
+            });</script>
+
+</body>
+</html>

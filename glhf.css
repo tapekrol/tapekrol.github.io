@@ -1,0 +1,19 @@
+body{
+	background-color: black  ;
+}
+details{
+	color: red;
+}
+body{
+	text-align: center;
+	color: red;
+	font-family:cursive;
+}
+button{
+	color: green;
+}
+h1{
+	font-family: sans-serif;
+}
+a{
+	font-family: cursive;
